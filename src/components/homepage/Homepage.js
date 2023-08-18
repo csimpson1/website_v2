@@ -1,4 +1,5 @@
 import './Homepage.css';
+import BuiltDescription from '../about/built/BuiltDescription';
 
 const Homepage = () => {
     return (
@@ -8,6 +9,7 @@ const Homepage = () => {
                 <div>Colby Simpson</div>
                 <div>and I am a </div>
                 <div>developer</div>
+                <BuiltDescription></BuiltDescription>
             </div>
         </div>
 
