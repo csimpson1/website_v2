@@ -11,7 +11,10 @@ export const BuiltDescription = () => {
     const { designed, built } = descriptions[getRandomNum()];
 
     return (
-        <div>This website was designed {designed} and built {built}.</div>
+        <div>
+            <div>This website was designed {designed} and built {built}.</div>
+            <div>Check out the github repo <a href='https://github.com/csimpson1/website_v2' target='_blank' rel="noreferrer">here</a>.</div>
+        </div>
     );
 }
 
