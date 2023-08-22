@@ -26,5 +26,9 @@ export const descriptions = [
     {
         designed: <span>on scrap pieces of paper</span>,
         built: <span>using React in VS Code</span>
+    },
+    {
+        designed: <span>by Annatar</span>,
+        build: <span>in Sammath Naur of Orodruin</span>
     }
 ];

@@ -1,5 +1,6 @@
 import './Homepage.css';
 import BuiltDescription from '../about/built/BuiltDescription';
+import LogoAnimation from './logo-animation/LogoAnimation';
 
 const Homepage = () => {
     return (
@@ -10,6 +11,7 @@ const Homepage = () => {
                 <div>and I am a </div>
                 <div>developer</div>
                 <BuiltDescription></BuiltDescription>
+                <LogoAnimation></LogoAnimation>
             </div>
         </div>
 
