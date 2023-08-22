@@ -2,7 +2,7 @@ import './LogoAnimation.css'
 
 export const LogoAnimation = () => {
     return (
-        <div>
+        <div className="holder">
             <span className="ring-3">
                 <span className="ring-2">
                     <span className="ring-1">
