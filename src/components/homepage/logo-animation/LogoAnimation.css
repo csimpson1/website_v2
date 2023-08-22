@@ -11,8 +11,6 @@
     width: 2.5rem;
     height: 2.5rem;
     background-color: #51FCC9;
-    /*background: radial-gradient(#e66465, #9198e5);*/
-    /*outline: 1px solid black;*/
     display: inline-block;
     transform:  translate(1.25rem, 1.25rem);
     animation-name: levitate;
@@ -28,7 +26,6 @@
     height: 5rem;
     background-color: #48E0DE;
     display: inline-block;
-    /*outline: 1px solid black;*/
     transform-style: preserve-3d;
     transform:  translate(1.25rem, 1.25rem);
     animation-name: levitate;
@@ -44,7 +41,6 @@
     height: 7.5rem;
     background-color: #5CD0F7;
     display: inline-block;
-    /*outline: 1px solid black;*/
     transform-style: preserve-3d;
     transform: translate(1.25rem, 1.25rem);
     animation-name: levitate;
@@ -60,7 +56,6 @@
     height: 10rem;
     background-color: #4892E0;
     display: inline-block;
-    /*outline: 1px solid black;*/
     transform-style:preserve-3d;
     animation-name: levitate;
     animation-duration: 4s;
