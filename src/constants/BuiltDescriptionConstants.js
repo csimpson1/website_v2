@@ -29,6 +29,6 @@ export const descriptions = [
     },
     {
         designed: <span>by Annatar</span>,
-        build: <span>in Sammath Naur of Orodruin</span>
+        built: <span>in Sammath Naur of Orodruin</span>
     }
 ];
