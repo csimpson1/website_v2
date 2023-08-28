@@ -8,4 +8,17 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.plane-top {
+    transform: perspective(800px) rotateX(75deg);
+    transform-style: preserve-3d;
+    transform-origin: bottom center;
+}
+
+.plane-front-face {
+    transform: perspective(800px) rotateX(-15deg);
+    transform-style: preserve-3d;
+    transform-origin: top;
 }

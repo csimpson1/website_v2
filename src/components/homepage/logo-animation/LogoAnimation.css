@@ -67,10 +67,10 @@
 .holder {
     transform: rotateX(0deg);
     transform-style:preserve-3d;
-    /* animation-name: spin;
+    animation-name: spin;
     animation-duration: 12s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; */
+    animation-timing-function: linear;
 }
 
 @keyframes spin {
@@ -79,5 +79,69 @@
     100% {transform: rotateX(45deg);}
 }
 
+/*Styles used by the hover activated component*/
 
+.holder-ht {
+    transform: rotateX(0deg);
+    transform-style:preserve-3d;
+}
+
+
+.holder-ht:hover .ring-0-ht {
+    transform: translate(1.25rem, 1.25rem) translateZ(1rem);
+}
+
+.holder-ht:hover .ring-1-ht {
+    transform: translate(1.25rem, 1.25rem) translateZ(1rem);
+}
+
+.holder-ht:hover .ring-2-ht {
+    transform: translate(1.25rem, 1.25rem) translateZ(1rem);
+}
+
+
+
+
+.ring-0-ht {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #51FCC9;
+    display: inline-block;
+    transform:  translate(1.25rem, 1.25rem);
+    transition: transform 1s ease-in-out;
+}
+
+.ring-1-ht {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: #48E0DE;
+    display: inline-block;
+    transform-style: preserve-3d;
+    transform:  translate(1.25rem, 1.25rem);
+    transition: transform 1s ease-in-out;
+
+}
+
+.ring-2-ht {
+    border-radius: 50%;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: #5CD0F7;
+    display: inline-block;
+    transform-style: preserve-3d;
+    transform: translate(1.25rem, 1.25rem);
+    transition: transform 1s ease-in-out;
+}
+
+.ring-3-ht {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color: #4892E0;
+    display: inline-block;
+    transform-style:preserve-3d;
+    transition: transform 1s ease-in-out;
+}
 
