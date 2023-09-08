@@ -2,11 +2,14 @@ import './Homepage.css';
 import BuiltDescription from '../about/built/BuiltDescription';
 import LogoAnimation from './logo-animation/LogoAnimation';
 import LogoAnimationHover from './logo-animation/LogoAnimationHover';
+import TableOfContents from '../blog/post/table-of-contents/TableOfContents';
+import TestPost from '../blog/post/TestPost';
 
 const Homepage = () => {
     
     return (
         <div>
+            <TestPost></TestPost>
             <div className='homepage-container'>
                 <div>Hello, my name is</div>
                 <div>Colby Simpson</div>
