@@ -10,7 +10,7 @@ const Homepage = () => {
     return (
         <div>
             <TestPost></TestPost>
-            <div className='homepage-container'>
+            {/* <div className='homepage-container'>
                 <div>Hello, my name is</div>
                 <div>Colby Simpson</div>
                 <div>and I am a </div>
@@ -68,7 +68,7 @@ const Homepage = () => {
                         <LogoAnimationHover/>
                     </div>
                 </div>
-                {/* <div>
+                <div>
                     <div className="logo-row">
                     <LogoAnimation angle="75deg"/>
                     </div>
@@ -77,9 +77,9 @@ const Homepage = () => {
                         <LogoAnimation angle="65deg"/>
                         <LogoAnimation angle="65deg"/>
                     </div>
-                </div> */}
+                </div> 
                 <LogoAnimationHover angle="65deg"></LogoAnimationHover>
-            </div>
+            </div> */}
         </div>
 
     );

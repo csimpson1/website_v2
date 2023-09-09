@@ -1,0 +1,8 @@
+.article-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main-body {
+    max-width: 70%;
+}
