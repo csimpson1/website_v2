@@ -1,5 +1,7 @@
 import useHeadings from '../../../../hooks/UseHeadings';
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
+import BookOutlinedIcon from '@mui/icons-material/BookOutlined';
+import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined';
 
 import React, {useState} from 'react';
 import './TableOfContents.css';
@@ -23,8 +25,11 @@ const Headings = ({ headings }) => {
 
     return(
     <>
-        <DownloadForOfflineIcon onClick = {(e) => handleTocExpansion(e)}></DownloadForOfflineIcon>
-        {isExpanded && <ul>
+        {!isExpanded && <BookOutlinedIcon  onClick = {(e) => handleTocExpansion(e)}></BookOutlinedIcon>}
+        {isExpanded && 
+        <>
+        <MenuBookOutlinedIcon onClick = {(e) => handleTocExpansion(e)}></MenuBookOutlinedIcon>
+        <ul>
             {headings.map((heading) => (
                 <li key={heading.id}>
                     <a href={`#${heading.id}`} onClick={(e) => scrollHandler(e, heading.id)}>{heading.title}</a>
@@ -50,7 +55,7 @@ const Headings = ({ headings }) => {
                 </li>
             ))}
         </ul>
-    }
+        </>}
     </>
     );
 };
