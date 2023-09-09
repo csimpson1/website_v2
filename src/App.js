@@ -1,10 +1,9 @@
-import './App.css';
-import Homepage from './components/homepage/Homepage.js';
+import React from 'react'
+import './App.css'
+import Homepage from './components/homepage/Homepage.js'
 
 function App() {
-  return (
-    <Homepage></Homepage>
-  );
+  return <Homepage></Homepage>
 }
 
-export default App;
+export default App
