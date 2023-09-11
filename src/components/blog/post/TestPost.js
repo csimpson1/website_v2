@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import TableOfContents from './table-of-contents/TableOfContents'
 import './TestPost.css'
 const TestPost = () => {
+  const testLatex =
+    'When \\(a \\ne 0\\), there exists two solutions for \\(ax^2 + bx + c = 0\\) as \\[x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.\\]'
+
+  useEffect(() => {
+    if (typeof window?.MathJax !== 'undefined') {
+      window.MathJax.typeset()
+    }
+  }, [])
+
   return (
     <div className='article-container'>
       <TableOfContents />
       <div className='main-body'>
         <h2 id='h2-1'>Top Heading 1</h2>
         <p>
+          {testLatex}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
           enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
@@ -17,6 +27,7 @@ const TestPost = () => {
         <h2 id='h2-2'>Top Heading 2</h2>
         <h3 id='h3-1'>Sub Heading 2-1</h3>
         <p>
+          {'When \\(a \\ne 0\\), there exists two solutions for \\(ax^2 + bx + c = 0\\) as \\[x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.\\]'}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
           enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
