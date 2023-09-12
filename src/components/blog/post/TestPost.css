@@ -9,3 +9,7 @@
     align-self: flex-end;
     padding: 2.5vh;
 }
+
+.img-width {
+    max-width: 50%;
+}

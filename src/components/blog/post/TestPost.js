@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 
 import TableOfContents from './table-of-contents/TableOfContents'
+import CaptionedImage from './captioned-image/CaptionedImage'
+import SheepDog from './old-english-sheepdog.jpg'
 import './TestPost.css'
 const TestPost = () => {
   const testLatex =
@@ -35,6 +37,12 @@ const TestPost = () => {
         </p>
         <h2 id='h2-3'>Top Heading 3</h2>
         <h3 id='h3-2'>Sub Heading 3-1</h3>
+        <CaptionedImage
+          className={'.img-width'}
+          imgSrc={SheepDog}
+          altTxt={'one floofy dog'}
+          caption={'A dandelion, or a dog? You decide.'}
+        ></CaptionedImage>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
           enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
