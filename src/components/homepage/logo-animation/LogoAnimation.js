@@ -1,10 +1,10 @@
-import React from 'react'
-import { PropTypes } from 'prop-types'
+import React from 'react';
+import { PropTypes } from 'prop-types';
 
-import './LogoAnimation.css'
+import './LogoAnimation.css';
 
 export const LogoAnimation = ({ angle }) => {
-  const xRotation = angle ?? '0deg'
+  const xRotation = angle ?? '0deg';
 
   return (
     <div className='holder' style={{ transform: `rotateX(${xRotation})` }}>
@@ -16,11 +16,11 @@ export const LogoAnimation = ({ angle }) => {
         </span>
       </span>
     </div>
-  )
-}
+  );
+};
 
 LogoAnimation.propTypes = {
   angle: PropTypes.Number
-}
+};
 
-export default LogoAnimation
+export default LogoAnimation;

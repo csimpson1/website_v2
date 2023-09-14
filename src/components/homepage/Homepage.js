@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import './Homepage.css'
+import './Homepage.css';
 // import BuiltDescription from '../about/built/BuiltDescription'
 // import LogoAnimation from './logo-animation/LogoAnimation'
 // import LogoAnimationHover from './logo-animation/LogoAnimationHover'
 // import TableOfContents from '../blog/post/table-of-contents/TableOfContents'
-import TestPost from '../blog/post/TestPost'
+import TestPost from '../blog/post/TestPost';
 
 const Homepage = () => {
   return (
@@ -82,7 +82,7 @@ const Homepage = () => {
                 <LogoAnimationHover angle="65deg"></LogoAnimationHover>
             </div> */}
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;

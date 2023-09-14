@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export const descriptions = [
   {
@@ -51,4 +51,4 @@ export const descriptions = [
     designed: <span>by Annatar</span>,
     built: <span>in Sammath Naur of Orodruin</span>
   }
-]
+];

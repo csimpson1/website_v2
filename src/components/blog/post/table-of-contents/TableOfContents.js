@@ -1,19 +1,19 @@
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
-import useHeadings from '../../../../hooks/UseHeadings'
-import BookOutlinedIcon from '@mui/icons-material/BookOutlined'
-import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined'
+import useHeadings from '../../../../hooks/UseHeadings';
+import BookOutlinedIcon from '@mui/icons-material/BookOutlined';
+import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined';
 
-import './TableOfContents.scss'
+import './TableOfContents.scss';
 
 const Headings = ({ headings, showToc }) => {
   const scrollHandler = (event, id) => {
-    event.preventDefault()
+    event.preventDefault();
     document.querySelector(`#${id}`).scrollIntoView({
       behavior: 'smooth'
-    })
-  }
+    });
+  };
 
   return (
     <>
@@ -51,22 +51,22 @@ const Headings = ({ headings, showToc }) => {
         </ul>
       )}
     </>
-  )
-}
+  );
+};
 
 Headings.propTypes = {
   headings: PropTypes.Object,
   showToc: PropTypes.Boolean
-}
+};
 
 const TableOfContents = () => {
-  const [isTocExpanded, setTocExpanded] = useState(true)
-  const { headings } = useHeadings()
+  const [isTocExpanded, setTocExpanded] = useState(true);
+  const { headings } = useHeadings();
 
   const handleTocExpansion = (event) => {
-    event.preventDefault()
-    setTocExpanded(!isTocExpanded)
-  }
+    event.preventDefault();
+    setTocExpanded(!isTocExpanded);
+  };
   return (
     <div className={isTocExpanded ? 'toc-container' : 'toc-container shrink-width-container'}>
       {!isTocExpanded && <BookOutlinedIcon onClick={(e) => handleTocExpansion(e)}></BookOutlinedIcon>}
@@ -75,11 +75,11 @@ const TableOfContents = () => {
         <Headings headings={headings} showToc={isTocExpanded} />
       </nav>
     </div>
-  )
-}
+  );
+};
 
 TableOfContents.propTypes = {
   headings: PropTypes.Object
-}
+};
 
-export default TableOfContents
+export default TableOfContents;

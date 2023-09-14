@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 
-import TableOfContents from './table-of-contents/TableOfContents'
-import CaptionedImage from './captioned-image/CaptionedImage'
-import SheepDog from './old-english-sheepdog.jpg'
-import './TestPost.css'
+import TableOfContents from './table-of-contents/TableOfContents';
+import CaptionedImage from './captioned-image/CaptionedImage';
+import SheepDog from './old-english-sheepdog.jpg';
+import './TestPost.css';
 const TestPost = () => {
   const testLatex =
-    'When \\(a \\ne 0\\), there exists two solutions for \\(ax^2 + bx + c = 0\\) as \\[x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.\\]'
+    'When \\(a \\ne 0\\), there exists two solutions for \\(ax^2 + bx + c = 0\\) as \\[x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.\\]';
 
   useEffect(() => {
     if (typeof window?.MathJax !== 'undefined') {
-      window.MathJax.typeset()
+      window.MathJax.typeset();
     }
-  }, [])
+  }, []);
 
   return (
     <div className='article-container'>
@@ -100,7 +100,7 @@ const TestPost = () => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TestPost
+export default TestPost;

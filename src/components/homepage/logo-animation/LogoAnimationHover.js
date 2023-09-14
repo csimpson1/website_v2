@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import './LogoAnimation.css'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './LogoAnimation.css';
 
 export const LogoAnimationHover = ({ angle }) => {
-  const xRotation = angle ?? '0deg'
+  const xRotation = angle ?? '0deg';
 
   return (
     <div className='holder-ht' style={{ transform: `rotateX(${xRotation})` }}>
@@ -15,11 +15,11 @@ export const LogoAnimationHover = ({ angle }) => {
         </span>
       </span>
     </div>
-  )
-}
+  );
+};
 
 LogoAnimationHover.propTypes = {
   angle: PropTypes.Number
-}
+};
 
-export default LogoAnimationHover
+export default LogoAnimationHover;
