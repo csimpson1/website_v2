@@ -15,3 +15,8 @@ It feels pretty good to be redoing my website. I liked hugo for its ease of use,
 - All the old articles you know and love
 - Pixel art
 - Dark theme
+
+### Where's your math at?
+
+Let $V$ be a vector space, and $T: V \rightarrow V$ a linear operator such that $V^2=V$. Then $V=\ker(T) \oplus \text{im}(T)$
+
