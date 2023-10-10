@@ -16,29 +16,10 @@ nav {
     transition: width $toc-transition-time ease-in-out;    
 }
 
-.green-bg {
-    background-color: green;
-}
-
-.red-bg {
-    background-color: red;
-}
-
 .shrink-width {
     width: 0%;
 }
 
 .shrink-width-container {
     width: calc($toc-icon-size + 20px);
-}
-
-.opacity-zero {
-    opacity: 0%;
-    overflow:hidden;
-}
-
-.opacity-zero-expand {
-    opacity: 100%;
-    overflow:hidden;
-    //transition: opacity 0s $toc-transition-time;
 }

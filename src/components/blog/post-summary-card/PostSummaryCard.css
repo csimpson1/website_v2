@@ -1,0 +1,15 @@
+.post-card-summary-body {
+    display: flex;
+    flex-direction:  row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 14pt;;
+}
+
+.summary {
+    margin-left: 0.5rem;
+}

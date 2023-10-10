@@ -59,9 +59,9 @@ Headings.propTypes = {
   showToc: PropTypes.Boolean
 };
 
-const TableOfContents = () => {
+const TableOfContents = (article) => {
   const [isTocExpanded, setTocExpanded] = useState(true);
-  const { headings } = useHeadings();
+  const { headings } = useHeadings(article);
 
   const handleTocExpansion = (event) => {
     event.preventDefault();
