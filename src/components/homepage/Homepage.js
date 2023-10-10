@@ -5,12 +5,13 @@ import './Homepage.css';
 // import LogoAnimation from './logo-animation/LogoAnimation'
 // import LogoAnimationHover from './logo-animation/LogoAnimationHover'
 // import TableOfContents from '../blog/post/table-of-contents/TableOfContents'
-import TestPost from '../blog/post/TestPost';
+// import TestPost from '../blog/post/TestPost';
+import TestPost2 from '../blog/post/TestPost2';
 
 const Homepage = () => {
   return (
     <div>
-      <TestPost></TestPost>
+      <TestPost2></TestPost2>
       {/* <div className='homepage-container'>
                 <div>Hello, my name is</div>
                 <div>Colby Simpson</div>

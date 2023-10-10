@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
 const getHeadings = (headingElements) => {
-  console.log('in getHeadings');
   const headings = [];
   let l1Index = 0;
   let l2Index = 0;
@@ -21,18 +20,13 @@ const getHeadings = (headingElements) => {
   return headings;
 };
 
-export const useHeadings = () => {
+export const useHeadings = (isArticleLoaded) => {
   const [headings, setHeadings] = useState([]);
-  console.log('in useHeadings!');
   useEffect(() => {
     const headingDomElements = Array.from(document.querySelectorAll('h2, h3, h4'));
     const newHeadings = getHeadings(headingDomElements);
     setHeadings(newHeadings);
-    console.log('headings');
-    console.log(headings);
-  }, []);
-  console.log('headings after useeffect');
-  console.log(headings);
+  }, [isArticleLoaded]);
   return { headings };
 };
 
