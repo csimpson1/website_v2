@@ -1,19 +1,19 @@
 import React from 'react';
 import Thumbnail from '../post/thumbnail/Thumbnail';
 
-import './PostCardSummary';
+import './PostSummaryCard.css';
 
-const PostCardSummary = ({ title, summaryText, thumbNailSrc }) => {
+const PostCardSummary = ({ title, summary, thumbNailSrc }) => {
   return (
-    <details>
+    <div>
       <div className='post-card-summary-body'>
         <Thumbnail src={thumbNailSrc}></Thumbnail>
         <div>
           <h1 className='title'>{title}</h1>
-          <summary className='summary'>{summaryText}</summary>
+          <summary className='summary'>{summary}</summary>
         </div>
       </div>
-    </details>
+    </div>
   );
 };
 

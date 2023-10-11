@@ -6,12 +6,14 @@ import './Homepage.css';
 // import LogoAnimationHover from './logo-animation/LogoAnimationHover'
 // import TableOfContents from '../blog/post/table-of-contents/TableOfContents'
 // import TestPost from '../blog/post/TestPost';
-import TestPost2 from '../blog/post/TestPost2';
+//import TestPost2 from '../blog/post/TestPost2';
+import PostOverview from '../blog/post-overview/PostOverview';
 
 const Homepage = () => {
   return (
     <div>
-      <TestPost2></TestPost2>
+      <PostOverview></PostOverview>
+      {/* <TestPost2></TestPost2> */}
       {/* <div className='homepage-container'>
                 <div>Hello, my name is</div>
                 <div>Colby Simpson</div>
