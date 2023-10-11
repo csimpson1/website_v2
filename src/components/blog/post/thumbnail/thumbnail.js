@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './thumbnail.css';
+import './Thumbnail.scss';
 
 export const Thumbnail = ({ src }) => {
   return <img src={src} className='thumbnail' />;
